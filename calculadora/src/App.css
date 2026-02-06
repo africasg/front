@@ -1,0 +1,51 @@
+.operaciones {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.5rem;
+  height: 118px;
+  align-items: flex-start;
+}
+.Visor{
+  display: flex;
+  justify-content: flex-end;
+  margin: 1rem;
+  background-color: antiquewhite
+}
+ button {
+  height: 35px;
+  width: 40px;
+  
+}
+.numeros {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.numeros > div {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.caja {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-self: flex-start;
+}
+.caja button{
+    height: 30px;
+}
+
+.operacionesextra {
+  display: flex;
+  
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.igual{
+  width: 87px;
+}
