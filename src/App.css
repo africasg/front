@@ -1,37 +1,51 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-.header{
+.operaciones {
   display: flex;
-  flex-direction: column-reverse
-
-
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.5rem;
+  height: 118px;
+  align-items: flex-start;
 }
-.mainContainer{
-  display:flex;
-  flex-direction: column;
-  justify-content:center;
-  align-items:center;
+.Visor{
+  display: flex;
+  justify-content: flex-end;
+  margin: 1rem;
+  background-color: antiquewhite
+}
+ button {
+  height: 35px;
+  width: 40px;
   
-  color: rgba(101, 199, 167, 0.703);
-  background-color: antiquewhite;
-  width: 100%; 
-  height: 100%;
 }
-.operaciones{
+.numeros {
   display: flex;
-  justify-content: flex-start;
-}
-.caja{
-  display: flex;
+  justify-content: center;
   flex-direction: column;
-  justify-content: right;
+  gap: 0.5rem;
+}
+
+.numeros > div {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.caja {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-self: flex-start;
+}
+.caja button{
+    height: 30px;
+}
+
+.operacionesextra {
+  display: flex;
+  
+  gap: 0.5rem;
+  margin-top: 0.5rem;
 }
 .igual{
-   display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
+  width: 87px;
 }

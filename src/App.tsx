@@ -54,74 +54,45 @@ const limpiarPantalla = () =>{
 }
 
   return (
-    <div className='mainContainer'>
-    <div> 
-      <h1>{textoOperacion}</h1>
-    </div>
-    <div className='operaciones'>
-   
-      <div className='numeros'> 
+   <div className="mainContainer">
+   <div className='Visor'> 
+        <h1> {textoOperacion}</h1> 
+   </div> 
+  <div>
+    <div className="operaciones">
+      <div className="numeros">
         <div>
-        <button onClick={()=>{
-          handleClick("1");
-        }}>1</button>
-        <button onClick={()=>{
-          handleClick("2");
-        }}>2</button>
-        <button onClick={()=>{
-          handleClick("3");
-        }}>3</button>
+          <button onClick={() => handleClick("1")}>1</button>
+          <button onClick={() => handleClick("2")}>2</button>
+          <button onClick={() => handleClick("3")}>3</button>
         </div>
         <div>
-        <button onClick={()=>{
-          handleClick("4");
-        }}>4</button>
-        <button onClick={()=>{
-          handleClick("5");
-        }}>5</button>
-        <button onClick={()=>{
-          handleClick("6");
-        }}>6</button>
+          <button onClick={() => handleClick("4")}>4</button>
+          <button onClick={() => handleClick("5")}>5</button>
+          <button onClick={() => handleClick("6")}>6</button>
         </div>
         <div>
-        <button onClick={()=>{
-          handleClick("7");
-        }}>7</button>
-        <button onClick={()=>{
-          handleClick("8");
-        }}>8</button>
-        <button onClick={()=>{
-          handleClick("9");
-        }}>9</button>
+          <button onClick={() => handleClick("7")}>7</button>
+          <button onClick={() => handleClick("8")}>8</button>
+          <button onClick={() => handleClick("9")}>9</button>
         </div>
-        <div className='caja'>
-        <button onClick={()=>{
-          handleClick("+");
-        }} >+</button>
-        <button onClick={()=>{
-          handleClick("-");
-        }}>-</button>
-        <button onClick={()=>{
-          handleClick("/");
-        }}>/</button>
-        <button onClick={()=>{
-          handleClick("*");
-        }}>*</button>
-        <button onClick={()=>{
-          limpiarPantalla();
-        }}>AC</button>
-        </div>
-      </div> 
-    <div className='igual'> 
-      <button onClick={()=>{
-        handleIgual("=")
-      }}>=</button>
-      <button onClick={()=>{
-          handleClick("0");
-        }}>0</button>
+      </div>
+      <div className="caja">
+        <button onClick={() => handleClick("+")}>+</button>
+        <button onClick={() => handleClick("-")}>-</button>
+        <button onClick={() => handleClick("/")}>/</button>
+        <button onClick={() => handleClick("*")}>*</button>
+       
+      </div>
     </div>
+    <div className="operacionesextra">
+       <button onClick={limpiarPantalla}>AC</button>
+      <button onClick={() => handleClick("0")}>0</button>
+      <button className="igual"onClick={() => handleIgual("=")}>=</button>
+    
     </div>
-    </div>
+  </div>
+</div>
   )
 }
 
