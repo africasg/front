@@ -1,35 +1,30 @@
-import { useState } from 'react';
+import { use, useEffect, useState } from 'react';
 import './App.css'
 
 const App = () => {
 
    const [textoOperacion,graficado] = useState<string>("") //los estados siempre tienen que tener valor inicial
-   let [numero1,setNum1] = useState<string|any>(null)
-   let [numero2,setNum2] = useState<string|any>(null)
-    const [operacion,setOperacion] = useState<string|null>(null)
-   
-  
-const handleClick = (miString: string) =>{
-  if(!numero1 && miString !== "+" && miString !== "-" && miString !== "*" && miString !== "/" && miString !== "="){
-    setNum1((miString))
-    graficado(textoOperacion+miString)
-  }
- else if(!operacion && (miString === "+" || miString === "-" || miString == "*" || miString == "/" || miString == "=")){
-    setOperacion((miString))
-    graficado(textoOperacion+miString)
-  }
-  else if(!numero2 && miString !== "+" && miString !== "-" && miString !== "*" && miString !== "/" && miString !== "="){
-    setNum2((miString))
-    graficado(textoOperacion+miString)
-  }
-}
-const handleIgual = (miIgual : string) =>{
-  if(miIgual==="="){
-    if(numero1 && operacion && numero2){
+   let [numero1,setNum1] = useState<string|null>(null)
+   let [numero2,setNum2] = useState<string|null>(null)
+   let [operacion,setOperacion] = useState<string|null>(null)
+   let [resultado,setResultado] = useState<boolean> (false) 
+    useEffect(()=>{
+     let textoGraficado = " "
+     if(numero1) textoGraficado = textoGraficado+numero1
+     if(operacion) textoGraficado=textoGraficado+operacion
+     if(numero2) textoGraficado=textoGraficado+numero2
+     graficado(textoGraficado)
+    },[numero1,numero2,operacion]);
+
+
+    useEffect(()=>{
+      console.log(numero1, numero2, operacion)
+     if(numero1 && operacion && numero2){
       const numero1Real=Number(numero1);
       const numero2Real  =Number(numero2);
+      
       if(operacion==="+"){
-          graficado(String(numero1Real+numero2Real));
+          graficado(String(numero1Real+numero2Real))
       }
       if(operacion==="-"){
         graficado(String(numero1Real-numero2Real));
@@ -43,6 +38,23 @@ const handleIgual = (miIgual : string) =>{
 
       }
     }
+    },[resultado])
+const handleClick = (miString: string) =>{
+  if(!numero1 && miString !== "+" && miString !== "-" && miString !== "*" && miString !== "/" && miString !== "="){
+    setNum1((miString))
+  }
+ else if(!operacion && (miString === "+" || miString === "-" || miString == "*" || miString == "/" || miString == "=")){
+    setOperacion((miString))
+    
+  }
+  else if(!numero2 && miString !== "+" && miString !== "-" && miString !== "*" && miString !== "/" && miString !== "="){
+    setNum2((miString))
+
+  }
+}
+const handleIgual = (miIgual : string) =>{
+  if(miIgual==="="){
+    setResultado(true);
   }
 }
 const limpiarPantalla = () =>{
