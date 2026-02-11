@@ -15,17 +15,10 @@ const  App = () => {
   const [characters,setCharacters] = useState<CharacterT[]>([]);
   
     useEffect(() => {
-    if (!search) return
-
-    api.get(`/character?name=${search}`)
-      .then(res => {
-        setCharacters(res.data.results)
-      })
-      .catch(() => {
-        setCharacters([])
-      })
-
-  }, [search])
+    search && api.get(`characterName?name=${search}`).then(e=>{
+      setCharacters(e.data.results)})
+    },[search])
+  
 
  return (
     <div className='mainContainer'>
