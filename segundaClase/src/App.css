@@ -8,5 +8,36 @@
   align-items: center;
   flex-wrap: wrap;
   flex-direction: row-reverse;
-  padding-top: 45px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  color: white
+   
+}
+.withBg{
+  background-image: 
+  linear-gradient(to right, rgba(30,75,115,0.9), rgba(30,75,115,0.9)),
+  url("./assets/rick_morty.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.searchBar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+.searchBar input {
+  background: rgb(255, 255, 255);
+  padding: 8px 12px;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border: none;
+}
+.searchBar button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }

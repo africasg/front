@@ -14,7 +14,7 @@ export const Character=(params:{id?:string,character?:CharacterT})=>{
                 setCharacter(res.data);
             });
     },[id]);
-    // no entendí lo del id, no tenían que ser State?
+   
 
     return(
         <>
