@@ -10,6 +10,7 @@ const Home = () => {
   // Hook: funcion que actua en el cliente: useState,useEffect
   return (
     <div>
+      <Link href="/laotra/27">La otra 27</Link>
      <h1>Hola mundillo</h1>
      {/* pasar a la siguiente pagina */}
      <Link href="/laotra">Si pinchas aquí, te lleva a la otra</Link>

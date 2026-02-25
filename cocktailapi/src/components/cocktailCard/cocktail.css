@@ -1,0 +1,67 @@
+.cocktailCardContainer {
+   display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+  gap: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255,255,255,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cocktailCard {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+}
+
+.cocktailCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.imageContainer img {
+ width: 180px;
+border-radius: 12px;
+object-fit: cover;
+/* asi queda mas bonito y entran más */
+box-shadow: 2px 2px 2px #025f79;
+}
+
+.cocktailCardContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 8px 0;
+}
+.cocktailCardContainer p{
+      margin: 8px 0;
+  font-size: 15px;
+  color: #eaeaea;
+}
+.nombreCocktail {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.botonVer {
+  margin-top: 12px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #222;
+  color: white;
+  transition: 0.2s;
+}
+
+.botonVer:hover {
+  background-color: #444;
+}

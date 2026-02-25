@@ -1,0 +1,118 @@
+/* CONTENEDOR PRINCIPAL */
+.mainContainer {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color:aliceblue
+}
+
+/* HEADER */
+.headerContainer {
+  margin-bottom: 30px;
+}
+.tituloPrincipal {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #ff7a18, #ffb347);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* lo de webkit hace que el gradient esté en el texto */
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+/* Línea decorativa debajo */
+.tituloPrincipal::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  margin: 12px auto 0;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #ff7a18, #ffb347);
+}
+/* BUSCADOR */
+.searchContainer {
+  margin-bottom: 20px;
+}
+.buscador {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  color: black;
+  padding: 12px 18px;
+  border-radius: 50px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+  max-width: 450px;
+  width: 100%;
+}
+
+.buscador:hover {
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+.buscador input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: transparent;
+}
+
+
+/* BOTONES */
+.botonesContainer {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.searchContainer button{
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+   background: linear-gradient(90deg, #ff7a18, #ffb347);
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  transition: 0.2s;
+}
+/*.botonesContainer button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #0070f3;
+  color: white;
+  font-weight: 500;
+  transition: 0.2s;
+} */
+/* 
+.botonesContainer button:hover {
+  background-color: #005ecb;
+}
+  Estos botones son los de página alante o página atrás */
+
+/* INFO */
+.infoContainer {
+  margin-bottom: 20px;
+}
+
+/* GRID DE COCKTAILS */
+  .cocktailContainer {
+    gap: 25px;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    
+    
+}
