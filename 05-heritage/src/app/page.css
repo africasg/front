@@ -1,0 +1,16 @@
+.page{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ min-height: 100vh;
+ flex-direction: column;
+ gap: 20px;
+}
+.seEliminara{
+  cursor:pointer
+}
+
+.seEliminara:hover{
+  text-decoration: line-through ;
+  color:red
+}

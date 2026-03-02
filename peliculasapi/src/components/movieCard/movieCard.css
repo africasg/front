@@ -1,0 +1,43 @@
+
+.movieCardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+
+  padding: 18px;
+  border-radius: 10px;
+
+  background: linear-gradient(145deg, #3a2413, #1c1208);
+  border: 3px solid #c6a75e; /* dorado antiguo */
+
+  box-shadow: 
+    0 0 20px rgba(0,0,0,0.8),
+    inset 0 0 10px rgba(255,215,0,0.3);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Imagen tipo cartel antiguo */
+.movieCardContainer img {
+  width: 180px;
+  border-radius: 6px;
+
+  filter: sepia(40%) contrast(110%);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.7);
+}
+
+/* Hover elegante */
+.movieCardContainer:hover {
+  transform: scale(1.05);
+  box-shadow: 
+    0 0 35px rgba(198,167,94,0.8),
+    inset 0 0 15px rgba(255,215,0,0.5);
+}
+.movieCardContainer label {
+  font-family: 'Cinzel', serif;
+  color: #f3e5c0;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 1px;
+}
