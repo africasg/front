@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { api } from "@/app/lib/api/axios";
 import type { Cocktail } from "@/app/types";
 import { useRouter } from "next/navigation";
-
+import "./cocktail.css"
 
 export const CocktailById = (params: {id?: string, cocktelin?: Cocktail, onSelect?: () => void}) =>{
     const id = params.id;
@@ -28,7 +28,7 @@ export const CocktailById = (params: {id?: string, cocktelin?: Cocktail, onSelec
         <div className="cocktailCard">
 
           <div className="imageContainer">
-            <img
+            <img onClick={() => router.push(`/cocktail/${cocktail.idDrink}`)}
               src={cocktail.strDrinkThumb}
               alt={cocktail.strDrink}
             />

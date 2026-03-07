@@ -1,4 +1,4 @@
-.cocktailCardContainer {
+/* .cocktailCardContainer {
    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -10,58 +10,73 @@
   border-radius: 15px;
   background: rgba(255,255,255,0.05);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+} */
+.cocktailCardContainer {
+  display: flex;
+  flex-wrap: wrap;            
+  justify-content: center;     
+  align-items: stretch;         
+  gap: 25px;
+  padding: 40px 20px;
 }
-
 .cocktailCard {
-  background: white;
-  border-radius: 16px;
+  background: linear-gradient(145deg, #ffffff, #f3f3f3);
+  border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  width: 100%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cocktailCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.2);
 }
 
-.cocktailCard:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+.imageContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  cursor:pointer;
 }
 
 .imageContainer img {
- width: 180px;
-border-radius: 12px;
-object-fit: cover;
-/* asi queda mas bonito y entran más */
-box-shadow: 2px 2px 2px #025f79;
+  width: 100%;
+  max-width: 200px;
+  border-radius: 14px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
-.cocktailCardContainer{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin: 8px 0;
-}
-.cocktailCardContainer p{
-      margin: 8px 0;
-  font-size: 15px;
-  color: #eaeaea;
-}
 .nombreCocktail {
-  margin-bottom: 10px;
-  font-size: 1.3rem;
-  font-weight: 600;
+  margin: 10px 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #222;
+  text-align: center;
 }
-
+.cocktailCard p {
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+  margin: 6px 0;
+}
 .botonVer {
-  margin-top: 12px;
-  padding: 8px 14px;
-  border-radius: 8px;
+  margin-top: 15px;
+  padding: 10px 18px;
+  border-radius: 10px;
   border: none;
   cursor: pointer;
-  background-color: #222;
-  color: white;
-  transition: 0.2s;
+   background: linear-gradient(90deg, #ff7a18, #ffb347);
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
 .botonVer:hover {
-  background-color: #444;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(196, 85, 0, 0.4);
 }

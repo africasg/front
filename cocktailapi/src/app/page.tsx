@@ -63,6 +63,7 @@ return (
         onSubmit={(e) => {
           e.preventDefault()
           setSearch(inputName)
+          
         }}
       >
         <label> Nombre: </label>

@@ -34,12 +34,22 @@ const CocktailConcreto = ( ) =>{
 
       {cocktail && (
         <>
-          <h1>{cocktail.strDrink}</h1>
+          <h1>{cocktail.strDrink.toUpperCase()}</h1>
+          <h1></h1>
           <img src={cocktail.strDrinkThumb} alt={cocktail.strDrink} />
           <p>{cocktail.strInstructions}</p>
         </>
       )}
+       {cocktail && (
+          <div className="Botoncillo">
+         <button
+      className="BotonVolver"
+            onClick={() => router.back()}
+          >  ← Volver
 
+        </button>
+          </div>
+)}
     </div>
   )
 
