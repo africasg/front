@@ -1,10 +1,10 @@
 "use client"
 import { useParams } from "next/navigation"
-import { Cocktail } from "@/app/types"
+import { Cocktail } from "@/types"
 import { useState } from "react"
 import { useEffect } from "react"
 import "./page.css"
-import { getCocktailById } from "@/app/lib/api/cocktail"
+import { getCocktailById } from "@/lib/api/cocktail"
 import { useRouter } from "next/navigation"
 
 const CocktailConcreto = ( ) =>{

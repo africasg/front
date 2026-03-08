@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { api } from "@/app/lib/api/axios";
-import type { Cocktail } from "@/app/types";
+import { api } from "@/lib/api/axios";
+import type { Cocktail } from "@/types";
 import { useRouter } from "next/navigation";
 import "./cocktail.css"
 

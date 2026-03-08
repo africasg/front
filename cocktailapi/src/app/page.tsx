@@ -2,9 +2,9 @@
 import { useEffect, useState } from "react";
 import "./globals.css"
 
-import { Cocktail } from "./types";
+import { Cocktail } from "../types";
 import { CocktailById } from "@/components/cocktailCard/cocktail";
-import { api } from "./lib/api/axios";
+import { api } from "../lib/api/axios";
 
 
 const Home =() =>{

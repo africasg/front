@@ -1,4 +1,4 @@
-import { Cocktail } from "@/app/types";
+import { Cocktail } from "@/types";
 import { api } from "./axios";
 
 export const getCocktailById= async (id:number) =>{
