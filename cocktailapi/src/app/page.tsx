@@ -19,8 +19,6 @@ const Home =() =>{
     useEffect(() => {
     if (!search) return
       let url = "/search.php?s="
-    
-
       if(inputName)  {     
        url = url + inputName;
       }
@@ -92,9 +90,13 @@ return (
     </div>
 
     <div className="cocktailContainer">
-      {cocktails.map((e) => (
+
+      {cocktails? <> {cocktails.map((e) => (
         <CocktailById key={e.idDrink} cocktelin={e} />
-      ))}
+       
+      ))} </>: <div> No se ha encontrado ningún cocktail con ese nombre </div>
+    }
+      
     </div>
 
   </div>

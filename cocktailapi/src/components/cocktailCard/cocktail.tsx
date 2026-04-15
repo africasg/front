@@ -3,6 +3,7 @@ import { api } from "@/lib/api/axios";
 import type { Cocktail } from "@/types";
 import { useRouter } from "next/navigation";
 import "./cocktail.css"
+import { getCocktailById } from "@/lib/api/cocktail";
 
 export const CocktailById = (params: {id?: string, cocktelin?: Cocktail, onSelect?: () => void}) =>{
     const id = params.id;
@@ -15,7 +16,7 @@ export const CocktailById = (params: {id?: string, cocktelin?: Cocktail, onSelec
  
 
     useEffect(()=> {
-       !cocktail && id && api.get(`/character/${id}`).then(res=>{
+       !cocktail && id && getCocktailById(Number(id)).then(res=>{
         setCocktail(res.data.drinks)
        })
 
