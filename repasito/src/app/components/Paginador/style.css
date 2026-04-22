@@ -1,0 +1,26 @@
+
+.ContainerPaginador{
+    display: flex;
+    flex-direction: row;
+    gap:10px
+
+}
+.arrow{
+    display:flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+
+}
+.arrow p{
+    color: white;
+    font: size 20px;
+}
+.arrowDisabled{
+    pointer-events: none ;
+    cursor: not-allowed;
+    background-color:white ;
+
+}
