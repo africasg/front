@@ -1,0 +1,20 @@
+.generalStarshipCard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+.infoStarship{
+     display:flex;
+    flex-direction: column; 
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.infoStarship h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(113, 3, 32);
+}

@@ -1,0 +1,20 @@
+.generalPlanetCard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+.infoPlanet{
+     display:flex;
+    flex-direction: column; 
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.infoPlanet h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(49, 113, 3);
+}

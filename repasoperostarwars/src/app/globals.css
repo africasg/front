@@ -1,0 +1,21 @@
+.generalPrincipal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.botonesPrincipales{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  width: auto;
+  height: 30px;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  min-height: 100vh;
+}

@@ -1,0 +1,9 @@
+.generalCabecera{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.botonCabecera button{
+    background-color: darkgoldenrod;
+}
