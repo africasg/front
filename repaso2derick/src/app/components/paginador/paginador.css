@@ -1,0 +1,19 @@
+.generalPaginacion{
+   display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    height: 100px;
+    width: auto;
+}
+.generalPaginacion button{
+    height: 75px;
+    width: 60px;
+}
+.numero{
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

@@ -1,0 +1,13 @@
+.generalCartaPersonaje{
+    border: 2px dashed #dc143c;
+    border-radius: 15%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.generalCartaPersonaje img{
+    border-radius: 30%;
+}

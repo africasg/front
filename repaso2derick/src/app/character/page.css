@@ -1,0 +1,25 @@
+.generalPagina{
+    display: flex;
+    
+    flex-direction: column;
+}
+.barraBusqueda{
+    display: flex;
+    flex-direction: row;
+
+}
+.tocho h1{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.info{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+padding: 20px;
+gap: 30px;
+}

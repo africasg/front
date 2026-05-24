@@ -1,0 +1,49 @@
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  
+}
+.layoutGeneral{
+display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: darkolivegreen;
+  margin-bottom: 10px;
+}
+.layoutGeneral h1{
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+size: 20;
+color: beige;
+}
+.layoutGeneral button{
+width: 150px;
+background-color: beige;
+transition: transform 0.5s;
+}
+.layoutGeneral button:hover{
+   transform: scale(1.1);
+  cursor: pointer;
+}
+.botonesGeneral{
+  justify-content: center;
+  display: flex;
+  align-items: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10px;
+  
+}
+.botonesGeneral button{
+  transition: transform 0.5s;
+
+}
+.botonesGeneral button:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+  
+}
